@@ -1,4 +1,4 @@
-# Meme Bot
+# Anggap Aja Bot
 This bot **SUPPOSED** to showing random memes from [Reddit](https://reddit.com) and Indonesia memes from [Twitter](https://twitter.com/MemeComicIndo).
 
 ### Requirements
@@ -40,7 +40,7 @@ Just latest version of [node.js](https://nodejs.org/en/download/current/) and [G
        These subreddit that post memes. You can change or add it if you want.
     1. twitter
        
-       Maybe this a little bit difficult to adjust [Twitter API](https://developer.twitter.com). You need API Key and Access Token for.
+       Maybe this a little bit difficult to adjust [Twitter API](https://developer.twitter.com). You need API Key and Access Token.
  1. Run the bot
     
     **Important** make sure your bot already at your server. [Tutorial](https://github.com/jagrosh/MusicBot/wiki/Adding-Your-Bot-To-Your-Server)
