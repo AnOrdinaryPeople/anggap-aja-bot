@@ -1,0 +1,27 @@
+{
+    "activity": {
+        "name": "Some bot hehe",
+        "type": "PLAYING"
+    },
+    "cmd": "=",
+    "log": false,
+    "client": "YOUR_BOT_CLIENT_ID",
+    "owner": "YOUR_DISCORD_ID",
+    "token": "YOUR_BOT_TOKEN",
+    "subreddit": [
+        "Animemes",
+        "dankmemes",
+        "memes",
+        "PewdiepieSubmissions"
+    ],
+    "twitter": {
+        "api": {
+            "key": "API_KEY",
+            "secret": "API_SECRET_KEY"
+        },
+        "token": {
+            "access": "ACCESS_TOKEN",
+            "secret": "ACCESS_TOKEN_SECRET"
+        }
+    }
+}
