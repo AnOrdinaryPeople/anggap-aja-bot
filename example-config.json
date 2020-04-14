@@ -22,6 +22,20 @@
         "token": {
             "access": "ACCESS_TOKEN",
             "secret": "ACCESS_TOKEN_SECRET"
-        }
+        },
+        "tweets": [
+            {
+                "user_id": 744314137,
+                "screen_name": "MemeComicIndo"
+            },
+            {
+                "user_id": 491057617,
+                "screen_name": "onecak"
+            },
+            {
+                "user_id": 823404426,
+                "screen_name": "tahilalats"
+            }
+        ]
     }
 }

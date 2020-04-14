@@ -3,7 +3,7 @@ module.exports = {
     description: 'Show random meme from Reddit',
     cooldown: 3,
     usage: '\`=meme submission_name\` or \`=meme\`',
-    aliases: ['m', 'reddit', 'mim'],
+    aliases: ['m', 'reddit'],
     execute(m, args, d) {
         const fetch = require('node-fetch'),
             rand = n => Math.floor(Math.random() * n)
