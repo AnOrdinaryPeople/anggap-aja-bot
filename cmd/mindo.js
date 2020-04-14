@@ -1,11 +1,11 @@
-const c_json = require('../command.json')
+const c_json = require('../command.json').mindo
 
 module.exports = {
-    name: c_json[3].name,
-    description: c_json[3].description,
+    name: c_json.name,
+    description: c_json.description,
     cooldown: 3,
-    usage: c_json[3].usage,
-    aliases: c_json[3].aliases,
+    usage: c_json.usage,
+    aliases: c_json.aliases,
     execute(m, args, d) {
         const Twitter = require('twitter'),
             client = new Twitter({

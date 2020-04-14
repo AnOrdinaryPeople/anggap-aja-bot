@@ -1,11 +1,11 @@
-const c_json = require('../command.json')
+const c_json = require('../command.json').meme
 
 module.exports = {
-    name: c_json[2].name,
-    description: c_json[2].description,
+    name: c_json.name,
+    description: c_json.description,
     cooldown: 3,
-    usage: c_json[2].usage,
-    aliases: c_json[2].aliases,
+    usage: c_json.usage,
+    aliases: c_json.aliases,
     execute(m, args, d) {
         const fetch = require('node-fetch'),
             rand = n => Math.floor(Math.random() * n)

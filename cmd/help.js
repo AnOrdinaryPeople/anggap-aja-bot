@@ -1,10 +1,10 @@
-const c_json = require('../command.json')
+const c_json = require('../command.json').help
 
 module.exports = {
-    name: c_json[1].name,
-    description: c_json[1].description,
-    usage: c_json[1].usage,
-    aliases: c_json[1].aliases,
+    name: c_json.name,
+    description: c_json.description,
+    usage: c_json.usage,
+    aliases: c_json.aliases,
     execute(m, args, d) {
         const fs = require('fs'),
             fetch = require('node-fetch')
