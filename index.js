@@ -28,7 +28,7 @@ c.on('message', m => {
     if (cmd.args && !args.length) {
         let reply = `You didn't provide any arguments, ${m.author}!`
 
-        cmd.usage ? reply += `\nThe proper usage would be: \`${env.cmd}${cmd.name} ${cmd.usage}` : ''
+        cmd.usage ? reply += `\nThe proper usage would be: ${cmd.usage}` : ''
 
         return m.channel.send(reply)
     }

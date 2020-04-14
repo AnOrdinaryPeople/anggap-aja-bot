@@ -13,7 +13,7 @@ module.exports = {
         for (const file of fs.readdirSync('./cmd').filter(f => f.endsWith('.js'))) {
             const f = require(`./${file}`)
 
-            obj.push({ name: `=${f.name}`, value: f.description })
+            obj.push({ name: `${d[1].cmd}${f.name}`, value: f.description })
         }
 
         return fetch(`https://discordapp.com/api/users/${d[1].client}`, {

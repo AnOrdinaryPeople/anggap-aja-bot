@@ -7,7 +7,7 @@
     },
     "help": {
         "name": "help",
-        "description": "Show avatar from tagged user",
+        "description": "Show all commands",
         "usage": "`=help`",
         "aliases": ["h", "helep"]
     },
