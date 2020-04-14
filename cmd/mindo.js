@@ -1,9 +1,11 @@
+const c_json = require('../command.json')
+
 module.exports = {
-    name: 'mindo',
-    description: 'Show random Indonesian meme',
+    name: c_json[3].name,
+    description: c_json[3].description,
     cooldown: 3,
-    usage: '\`=mindo\`',
-    aliases: ['mi', 'twitter'],
+    usage: c_json[3].usage,
+    aliases: c_json[3].aliases,
     execute(m, args, d) {
         const Twitter = require('twitter'),
             client = new Twitter({

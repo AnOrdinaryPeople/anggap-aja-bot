@@ -3,6 +3,8 @@ This bot **SUPPOSED** to showing random memes from [Reddit](https://reddit.com) 
 
 Basically this bot just take random post from subreddit or tweets at `config.json`.
 
+You can change command name, description or the others at `command.json`.
+
 # Installation
 ### Requirements
 Just latest version of [node.js](https://nodejs.org/en/download/current/) and [Git](https://git-scm.com/downloads)

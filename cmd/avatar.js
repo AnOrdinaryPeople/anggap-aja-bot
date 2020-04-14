@@ -1,8 +1,10 @@
+const c_json = require('../command.json')
+
 module.exports = {
-    name: 'avatar',
-    description: 'Show avatar from tagged user',
-    usage: '\`=avatar\` or \`=avatar mention_user\`',
-    aliases: ['img', 'icon', 'pfp'],
+    name: c_json[0].name,
+    description: c_json[0].description,
+    usage: c_json[0].usage,
+    aliases: c_json[0].aliases,
     execute(m, args, d) {
         const data = m.mentions.users.size ? m.mentions.users.first() : m.author
 

@@ -1,8 +1,10 @@
+const c_json = require('../command.json')
+
 module.exports = {
-    name: 'server',
-    description: 'Show some information about this server',
-    usage: '\`=server\`',
-    aliases: ['serper'],
+    name: c_json[5].name,
+    description: c_json[5].description,
+    usage: c_json[5].usage,
+    aliases: c_json[5].aliases,
     execute(m, args, d) {
         return m.channel.send(new d[0].MessageEmbed()
             .setColor('#3490dc')
