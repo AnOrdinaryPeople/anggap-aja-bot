@@ -28,6 +28,10 @@ module.exports = {
                     ? data = tweets[rand(tweets.length)]
                     : next = false
             }
+            if (d[1].log) {
+                console.log(`[${d[2].get()}] ${resp.request.uri.href}`)
+                console.log(`[${d[2].get()}] ${data.entities.media[0].url}`)
+            }
 
             return m.channel.send(new d[0].MessageEmbed()
                 .setColor('#3490dc')

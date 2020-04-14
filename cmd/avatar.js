@@ -6,12 +6,15 @@ module.exports = {
     usage: c_json.usage,
     aliases: c_json.aliases,
     execute(m, args, d) {
-        const data = m.mentions.users.size ? m.mentions.users.first() : m.author
+        const data = m.mentions.users.size ? m.mentions.users.first() : m.author,
+            avatar = data.displayAvatarURL({ format: 'png', dynamic: true })
+
+        d[1].log ? console.log(`[${d[2].get()}] ${avatar}`) : ''
 
         return m.channel.send(new d[0].MessageEmbed()
             .setColor('#3490dc')
             .setTitle(data.username + '\'s avatar')
-            .setImage(data.displayAvatarURL({ format: 'png', dynamic: true }))
+            .setImage(avatar)
         )
     }
 }

@@ -22,15 +22,26 @@ module.exports = {
             }
         })
             .then(resp => resp.json())
-            .then(resp =>
-                m.channel.send(new d[0].MessageEmbed()
+            .then(resp => {
+                const img = `https://cdn.discordapp.com/avatars/${resp.id}/${resp.avatar}.png`
+
+                if (d[1].log) {
+                    var x = ''
+                    for (var i = 0; i < d[1].client.length; i++)
+                        x += 'X'
+
+                    console.log(`[${d[2].get()}] https://discordapp.com/api/users/${x}`)
+                    console.log(`[${d[2].get()}] ${img}`)
+                }
+
+                return m.channel.send(new d[0].MessageEmbed()
                     .setColor('#3490dc')
                     .setTitle(resp.username)
                     .setDescription(`v${require('../package.json').version}`)
-                    .setThumbnail(`https://cdn.discordapp.com/avatars/${resp.id}/${resp.avatar}.png`)
+                    .setThumbnail(img)
                     .addField('\u200B', '\u200B')
                     .addFields(obj)
                 )
-            )
+            })
     }
 }
