@@ -1,6 +1,8 @@
 const fs = require('fs'),
     Discord = require('discord.js'),
     env = require('./config.json'),
+    str_rep = require('./plugin/str_rep.js'),
+    dt = require('./plugin/date.js'),
     c = new Discord.Client(),
     cooldown = new Discord.Collection()
 
@@ -12,7 +14,7 @@ for (const file of fs.readdirSync('./cmd').filter(f => f.endsWith('.js'))) {
 }
 
 c.once('ready', () => {
-    console.log(`Bot running at ${new Date().toLocaleString('id-ID')}`)
+    console.log(`[${dt.get()}] Bot running`)
     c.user.setActivity(env.activity.name, { type: env.activity.type })
 })
 
@@ -28,7 +30,7 @@ c.on('message', m => {
     if (cmd.args && !args.length) {
         let reply = `You didn't provide any arguments, ${m.author}!`
 
-        cmd.usage ? reply += `\nThe proper usage would be: ${cmd.usage}` : ''
+        cmd.usage ? reply += `\nThe proper usage would be: ${str_rep.rep(cmd.usage)}` : ''
 
         return m.channel.send(reply)
     }
@@ -53,11 +55,11 @@ c.on('message', m => {
     }, cooldownAmount)
 
     try {
-        env.log ? console.log(`[${new Date().toLocaleString('id-ID')}] Request from ${m.author.username}. Command ${env.cmd}${command}`) : ''
+        env.log ? console.log(`[${dt.get()}] [${m.author.username}] [${command}]${args.length ? ` [${args[0]}]` : ''}`) : ''
 
         if (args.length && args[0] === 'help')
-            return m.channel.send(`${cmd.description} ${cmd.usage ? '\n**How to use:**\n' + cmd.usage : ''}`)
-        else cmd.execute(m, args, [Discord, env])
+            return m.channel.send(`${cmd.description} ${cmd.usage ? '\n**How to use:**\n' + str_rep.rep(cmd.usage) : ''}`)
+        else cmd.execute(m, args, [Discord, env, dt])
     } catch (e) {
         console.error(e)
         m.reply('There was an error trying to execute that command!')
