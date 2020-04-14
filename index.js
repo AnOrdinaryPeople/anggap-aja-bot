@@ -31,8 +31,7 @@ c.on('message', m => {
         cmd.usage ? reply += `\nThe proper usage would be: \`${env.cmd}${cmd.name} ${cmd.usage}` : ''
 
         return m.channel.send(reply)
-    } else if (args.length && args[0] === 'help')
-        return m.channel.send(`${cmd.description} ${cmd.usage ? '\n**How to use:**\n' + cmd.usage : ''}`)
+    }
 
     if (!cooldown.has(cmd.name))
         cooldown.set(cmd.name, new Discord.Collection())
@@ -56,7 +55,9 @@ c.on('message', m => {
     try {
         env.log ? console.log(`[${new Date().toLocaleString('id-ID')}] Request from ${m.author.username}. Command ${env.cmd}${command}`) : ''
 
-        cmd.execute(m, args, [Discord, env])
+        if (args.length && args[0] === 'help')
+            return m.channel.send(`${cmd.description} ${cmd.usage ? '\n**How to use:**\n' + cmd.usage : ''}`)
+        else cmd.execute(m, args, [Discord, env])
     } catch (e) {
         console.error(e)
         m.reply('There was an error trying to execute that command!')
