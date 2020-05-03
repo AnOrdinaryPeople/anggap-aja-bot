@@ -26,11 +26,7 @@ module.exports = {
                 const img = `https://cdn.discordapp.com/avatars/${resp.id}/${resp.avatar}.png`
 
                 if (d[1].log) {
-                    var x = ''
-                    for (var i = 0; i < d[1].client.length; i++)
-                        x += 'X'
-
-                    console.log(`[${d[2].get()}] https://discordapp.com/api/users/${x}`)
+                    console.log(`[${d[2].get()}] https://discordapp.com/api/users/${d[1].client}`)
                     console.log(`[${d[2].get()}] ${img}`)
                 }
 
