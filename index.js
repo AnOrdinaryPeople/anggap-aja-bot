@@ -55,7 +55,7 @@ c.on('message', m => {
     }, cooldownAmount)
 
     try {
-        env.log ? console.log(`[${dt.get()}] [${m.author.username}] [${command}]${args.length ? ` [${args[0]}]` : ''}`) : ''
+        env.log ? console.log(`[${dt.get()}] [${m.guild.name}] [${m.author.username}] [${command}]${args.length ? ` [${args[0]}]` : ''}`) : ''
 
         if (args.length && args[0] === 'help')
             return m.channel.send(`${cmd.description} ${cmd.usage ? '\n**How to use:**\n' + str_rep.rep(cmd.usage) : ''}`)
