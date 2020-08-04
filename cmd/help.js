@@ -16,7 +16,7 @@ module.exports = {
             obj.push({ name: `${d[1].cmd}${f.name}`, value: f.description })
         }
 
-        return fetch(`https://discordapp.com/api/users/${d[1].client}`, {
+        return fetch(`https://discord.com/api/users/${d[1].client}`, {
             headers: {
                 Authorization: `Bot ${d[1].token}`
             }

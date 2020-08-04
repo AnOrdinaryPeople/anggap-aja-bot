@@ -3,36 +3,54 @@
         "name": "avatar",
         "description": "Show avatar from tagged user",
         "usage": "`$CMD$avatar` or `$CMD$avatar @mention_user`",
-        "aliases": ["img"]
+        "aliases": [
+            "img",
+            "abatar",
+            "avatwar",
+            "abatwar"
+        ]
     },
     "help": {
         "name": "help",
         "description": "Show all commands",
         "usage": "`$CMD$help`",
-        "aliases": ["h", "helep"]
+        "aliases": [
+            "h",
+            "helep"
+        ]
     },
     "meme": {
         "name": "meme",
         "description": "Show random meme from Reddit",
         "usage": "`$CMD$meme` or `$CMD$meme submission_name`",
-        "aliases": ["m", "reddit"]
+        "aliases": [
+            "m",
+            "reddit"
+        ]
     },
     "mindo": {
         "name": "mindo",
         "description": "Show random Indonesian meme",
         "usage": "`$CMD$mindo`",
-        "aliases": ["mi", "twitter"]
+        "aliases": [
+            "mi",
+            "twitter"
+        ]
     },
     "ping": {
         "name": "ping",
         "description": "Show bot ping",
         "usage": "`$CMD$ping`",
-        "aliases": ["p"]
+        "aliases": [
+            "p"
+        ]
     },
     "server": {
         "name": "server",
         "description": "Show some information about this server",
         "usage": "`$CMD$server`",
-        "aliases": ["serper"]
+        "aliases": [
+            "serper"
+        ]
     }
 }
