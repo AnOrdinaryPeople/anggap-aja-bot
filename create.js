@@ -31,8 +31,8 @@ module.exports = {
     const cmd = require('./command.json')
     cmd[arg] = {
         "name": arg,
-        "description": desc ? desc : "this command recently born!",
-        "usage": usage ? usage : `$CMD$${arg} (for now just useless command)`,
+        "description": desc || "this command recently born!",
+        "usage": usage || `$CMD$${arg} (for now just useless command)`,
         "aliases": []
     }
     fs.writeFile('./command.json', JSON.stringify(cmd, null, 4), err => {

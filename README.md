@@ -65,6 +65,8 @@ quick example:
 - `node create yeet "idk how to describing this description :("`
 - `node create comrade "*playing soviet anthem" "*opening google: how to explain usage?"`
 
+would be better if bot are offline....
+
 ### ehhh......
 If you want to develop this bot, why not? go ahead!
 
