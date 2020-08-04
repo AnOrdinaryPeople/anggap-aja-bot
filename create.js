@@ -13,7 +13,7 @@ fs.writeFile(`./cmd/${arg}.js`, `const c_json = require('../command.json').${arg
  * @param args arguments
  * @param d[0] module discord.js
  * @param d[1] bring object from config.json
- * @param d[2] just plugin date mostly used for console.log()
+ * @param d[2] just plugin/date.js mostly used for console.log()
  */
 
 module.exports = {
