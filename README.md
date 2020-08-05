@@ -58,14 +58,14 @@ Just latest version of [node.js](https://nodejs.org/en/download/current/) and [G
 ### create command
 if you're too lazy to creating command in `cmd` and creating object at `command.json` just run this command in your terminal
 
-`node create your_command description_optional usage_optional`
+`node create your_command "description (optional)" "usage (optional)"`
 
 quick example:
 - `node create dorime`
 - `node create yeet "idk how to describing this description :("`
-- `node create comrade "*playing soviet anthem" "*opening google: how to explain usage?"`
+- `node create comrade "*playing soviet anthem*" "opening google: how to explain usage?"`
 
-would be better if bot are offline....
+would be better if your bot are offline....
 
 ### ehhh......
 If you want to develop this bot, why not? go ahead!

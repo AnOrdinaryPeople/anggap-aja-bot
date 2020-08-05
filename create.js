@@ -9,7 +9,7 @@ fs.writeFile(`./cmd/${arg}.js`, `const c_json = require('../command.json').${arg
  * @constant c_json bring your custom config
  * like name, description, usage, and aliases
  * 
- * @param m ParialMessage
+ * @param m PartialMessage
  * @param args arguments
  * @param d[0] module discord.js
  * @param d[1] bring object from config.json
@@ -38,6 +38,6 @@ module.exports = {
     fs.writeFile('./command.json', JSON.stringify(cmd, null, 4), err => {
         if (err) throw err
 
-        console.log(`Created command ${arg} happy coding!`)
+        console.log(`Created command ${arg}. Happy coding!`)
     })
 })

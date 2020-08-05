@@ -1,5 +1,16 @@
 const c_json = require('../command.json').ping
 
+/**
+ * @constant c_json bring your custom config
+ * like name, description, usage, and aliases
+ * 
+ * @param m PartialMessage
+ * @param args arguments
+ * @param d[0] module discord.js
+ * @param d[1] bring object from config.json
+ * @param d[2] just plugin/date.js mostly used for console.log()
+ */
+
 module.exports = {
     name: c_json.name,
     description: c_json.description,
