@@ -52,5 +52,11 @@
         "aliases": [
             "serper"
         ]
+    },
+    "name": {
+        "name": "name",
+        "description": "Generate random name..",
+        "usage": "$CMD$name",
+        "aliases": []
     }
 }

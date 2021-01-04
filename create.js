@@ -17,10 +17,7 @@ fs.writeFile(`./cmd/${arg}.js`, `const c_json = require('../command.json').${arg
  */
 
 module.exports = {
-    name: c_json.name,
-    description: c_json.description,
-    usage: c_json.usage,
-    aliases: c_json.aliases,
+    ...c_json,
     execute(m, args, d) {
         // your idea goes here brrrrr....
     }
