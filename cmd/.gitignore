@@ -1,0 +1,8 @@
+*
+!.gitignore
+!avatar.js
+!help.js
+!meme.js
+!mindo.js
+!ping.js
+!server.js

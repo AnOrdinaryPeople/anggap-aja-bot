@@ -9,10 +9,8 @@
     "owner": "YOUR_DISCORD_ID",
     "token": "YOUR_BOT_TOKEN",
     "subreddit": [
-        "Animemes",
         "dankmemes",
-        "memes",
-        "PewdiepieSubmissions"
+        "memes"
     ],
     "twitter": {
         "api": {

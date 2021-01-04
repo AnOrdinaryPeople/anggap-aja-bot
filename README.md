@@ -10,12 +10,8 @@ You can change command name, description or the others at `command.json`.
 Just latest version of [node.js](https://nodejs.org/en/download/current/) and [Git](https://git-scm.com/downloads)
 
 ### Install
-1. Clone this project to your drive
-    1. Open the `explorer`
-    1. Go to `D:`
-    1. Right click and choose `Git Bash Here`
-    1. Paste this to your terminal `git clone https://github.com/AnOrdinaryPeople/discord-bot.git`
-1. Rename `example-config.json` to `config.json`
+1. Clone this project `git clone https://github.com/AnOrdinaryPeople/discord-bot.git`
+1. Duplicate config `cp example-config.json config.json`
 1. Adjust the `config.json`
     1. activity
         - **name**: you can customize it
@@ -27,19 +23,19 @@ Just latest version of [node.js](https://nodejs.org/en/download/current/) and [G
           - CUSTOM_STATUS
     1. client
        
-       Client ID from your bot. [Discord Developer Portal](https://discordapp.com/developers/applications).
+       Client ID from your bot https://discordapp.com/developers/applications
     1. cmd
     
-        Command to trigger the bot. Default is `=`.
+        Command to trigger the bot. Default is `=`
     1. log
        
-       Enable request log.
+       Enable request log
     1. owner
        
-        Your Discord ID. [Support Discord](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
+        Your Discord ID https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-
     1. token
        
-       Your bot token. You can find it at this link `https://discordapp.com/developers/applications/YOUR_BOT_CLIENT_ID/bot`.
+       Your bot token https://discordapp.com/developers/applications/YOUR_BOT_CLIENT_ID/bot
     1. subreddit
        
        These subreddit that post memes. You can change or add it if you want.
@@ -51,8 +47,8 @@ Just latest version of [node.js](https://nodejs.org/en/download/current/) and [G
          At this you will find `user_id` and `screen_name`. screen_name like `@WholesomeMeme`. user_id you can find it at this [link](http://gettwitterid.com).
  1. Run the bot
     
-    **Important** make sure your bot already at your server. Here the [tutorial](https://github.com/jagrosh/MusicBot/wiki/Adding-Your-Bot-To-Your-Server)
-    1. Open `Git Bash Here` inside the project
+    **IMPORTANT** make sure your bot already at your server. Here the [tutorial](https://github.com/jagrosh/MusicBot/wiki/Adding-Your-Bot-To-Your-Server)
+    1. Open terminal
     1. type `node .`
 
 ### create command
@@ -65,12 +61,8 @@ quick example:
 - `node create yeet "idk how to describing this description :("`
 - `node create comrade "*playing soviet anthem*" "opening google: how to explain usage?"`
 
-would be better if your bot are offline....
-
-### ehhh......
-If you want to develop this bot, why not? go ahead!
-
-Here some references:
+### uhhhmm.....
+Here some references if you want to make your own bot.
 - [Discord.js](https://discordjs.guide)
 - [Discord API](https://discordapp.com/developers/docs)
 - [Reddit API](https://www.reddit.com/dev/api)
